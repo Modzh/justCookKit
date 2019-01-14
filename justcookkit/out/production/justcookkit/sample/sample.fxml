@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+
+<GridPane alignment="center" hgap="10" prefHeight="387.0" prefWidth="553.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TableView id="tableRecipeOne" fx:id="tableRecipeOne" editable="true" prefHeight="200.0" prefWidth="457.0" />
+      <Button mnemonicParsing="false" onAction="#handleInitButtonAction" text="Button" GridPane.rowIndex="5" />
+      <Button fx:id="newRecipeButton" mnemonicParsing="false" onAction="#handleNewRecipeButton" text="New Recipe" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+   </children>
+
+
+</GridPane>
