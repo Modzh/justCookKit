@@ -12,7 +12,9 @@ import java.util.List;
 
 public class JDBCmanager {
 
-    private static final String dbURL = "jdbc:sqlite:C:/Idea/IdeaProjects/justcookkit/src/db/";
+//    private static final String FILEPATH =  System.getProperty("user.dir");
+//    private static final String file1 = System.getProperty("user.dir") + "/justcookkit/out/artifacts/justcookkit_jar";
+//    private static final String dbURL = "jdbc:sqlite:" + file1 + "/" +  "justCookKit.jar/src/db/";
 
     private Connection connect (String nameOfDb) {
         Connection conn = null;
@@ -22,7 +24,7 @@ public class JDBCmanager {
             System.out.println(e.getMessage());
         }
         try {
-            conn = DriverManager.getConnection(dbURL + nameOfDb);
+            conn = DriverManager.getConnection("jdbc:sqlite::resource:" + "db/"+nameOfDb);
 
             System.out.println("Connection to " + nameOfDb + " has been established");
         } catch(SQLException e) {

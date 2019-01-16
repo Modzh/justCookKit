@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="justCookKit:jar">
+    <output-path>$PROJECT_DIR$/justcookkit/out/artifacts/justCookKit_jar</output-path>
+    <root id="archive" name="justCookKit.jar">
+      <element id="module-output" name="justCookKit" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/justcookkit/sqlite-jdbc-3.23.1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="sqlite-jdbc-3.23.1" />
+    </root>
+  </artifact>
+</component>
